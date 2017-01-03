@@ -35,7 +35,7 @@ def test_upgrade_downgrade():
     if len(shakedown.get_package_repos()['repositories']) != 2:
           print('No kafka test repo found.  Skipping test_upgrade_downgrade')
           return
-          
+
     test_repo_name, test_repo_url = get_test_repo_info()
     test_version = get_pkg_version()
     print('Found test version: {}'.format(test_version))
@@ -110,7 +110,7 @@ def topics_are_available():
     spin(fn, success_predicate)
 
 def write_messages():
-    
+
     # kafka may not be ready to accept all msgs, try till all are done
     def fn(num):
         try:
@@ -120,18 +120,18 @@ def write_messages():
                 get_kafka_command(
                     'topic producer_test {} {}'.format(TOPIC_NAME, num - offset))
             assert (num - offset) >= 0
-            return num - offset 
+            return num - offset
         except RuntimeError:
             return num
 
     def success_predicate(left_offset):
         return (left_offset <= 0, 'producer_test continues....')
-    
+
     get_kafka_command(
         'topic producer_test {} {}'.format(TOPIC_NAME, NUM_TEST_MSGS))
     spin(fn, success_predicate, NUM_TEST_MSGS)
     print('producer_test is successful {} msg available'.format(NUM_TEST_MSGS))
-    
+
     # double check
     check_offsets()
 
