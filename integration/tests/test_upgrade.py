@@ -33,8 +33,8 @@ def teardown_module(module):
 def test_upgrade_downgrade():
     # Ensure both Universe and the test repo exist.
     if len(shakedown.get_package_repos()['repositories']) != 2:
-          print('No kafka test repo found.  Skipping test_upgrade_downgrade')
-          return
+        print('No kafka test repo found.  Skipping test_upgrade_downgrade')
+        return
 
     test_repo_name, test_repo_url = get_test_repo_info()
     test_version = get_pkg_version()
