@@ -1,5 +1,5 @@
 {
   "kafka": {
-    "inter_broker_protocol_version": "0.8.2.2"
+    "inter_broker_protocol_version": "0.10.1.1"
   }
 }
