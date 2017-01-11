@@ -83,7 +83,7 @@
           "health_check_max_consecutive_failures":{
             "description":"The the number of consecutive failures which cause a Broker process to exit.",
             "type":"number",
-            "default":3
+            "default":6
           }
         },
         "required":[
@@ -98,12 +98,12 @@
           "cpus":{
             "description":"Broker cpu requirements",
             "type":"number",
-            "default":1.0
+            "default":0.5
           },
           "mem":{
             "description":"Broker mem requirements",
             "type":"integer",
-            "default":2304
+            "default":512
           },
           "heap":{
             "description":"The Kafka process JVM heap configuration object",
@@ -112,7 +112,7 @@
               "size": {
                 "type":"integer",
                 "description":"The amound of JVM heap, in MB, allocated to the Kafka broker process.",
-                "default": 2048
+                "default": 512
               }
             },
             "additionalProperties": false,
@@ -160,7 +160,7 @@
           "mem":{
             "description":"Executor mem requirements",
             "type":"integer",
-            "default":256
+            "default":128
           },
           "disk":{
             "description":"Executor disk requirements",
