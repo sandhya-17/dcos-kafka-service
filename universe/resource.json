@@ -1,17 +1,17 @@
 {
   "assets": {
     "uris": {
-      "jre-tar-gz": "https://downloads.mesosphere.com/java/jre-8u112-linux-x64.tar.gz",
-      "kafka_tgz": "https://downloads.mesosphere.com/kafka/assets/kafka_2.11-0.10.1.0.tgz",
+      "jre-tar-gz": "http://10.203.241.151:7878/kafka_frameworks/jre-8u112-linux-x64.tar.gz",
+      "kafka_tgz": "http://10.203.241.151:7878/kafka_frameworks/kafka_2.11-0.10.1.1.tgz",
       "scheduler-zip": "{{artifact-dir}}/scheduler.zip",
       "executor-zip": "{{artifact-dir}}/executor.zip",
       "overrider-zip": "{{artifact-dir}}/overrider.zip"
     }
   },
   "images": {
-    "icon-small": "https://downloads.mesosphere.com/universe/assets/icon-service-kafka-small.png",
-    "icon-medium": "https://downloads.mesosphere.com/universe/assets/icon-service-kafka-medium.png",
-    "icon-large": "https://downloads.mesosphere.com/universe/assets/icon-service-kafka-large.png"
+    "icon-small": "http://10.203.241.151:7878/kafka_frameworks/icon-service-kafka-small.png",
+    "icon-medium": "http://10.203.241.151:7878/kafka_frameworks/icon-service-kafka-medium.png",
+    "icon-large": "http://10.203.241.151:7878/kafka_frameworks/icon-service-kafka-large.png"
   },
   "cli":{
     "binaries":{
