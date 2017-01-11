@@ -1,6 +1,6 @@
 {
   "packagingVersion": "3.0",
-  "name": "kafka",
+  "name": "apachekafka",
   "version": "{{package-version}}",
   "maintainer": "BellLabs",
   "description": "Apache Kafka running on DC/OS",
