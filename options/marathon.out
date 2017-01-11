@@ -8,7 +8,7 @@
     "BROKER_MEM": "2048",
     "DISK_TYPE": "ROOT",
     "FRAMEWORK_NAME": "kafkatest",
-    "JAVA_URI": "https://s3.amazonaws.com/downloads.mesosphere.io/kafka/assets/jre-8u72-linux-x64.tar.gz",
+    "JAVA_URI": "http://10.203.241.151:7878/kafka_frameworks/jre-8u112-linux-x64.tar.gz",
     "KAFKA_ADVERTISE_HOST_IP": "true",
     "KAFKA_OVERRIDE_AUTO_CREATE_TOPICS_ENABLE": "true",
     "KAFKA_OVERRIDE_AUTO_LEADER_REBALANCE_ENABLE": "true",
@@ -93,10 +93,10 @@
     "KAFKA_OVERRIDE_UNCLEAN_LEADER_ELECTION_ENABLE": "true",
     "KAFKA_OVERRIDE_ZOOKEEPER_SESSION_TIMEOUT_MS": "6000",
     "KAFKA_OVERRIDE_ZOOKEEPER_SYNC_TIME_MS": "2000",
-    "KAFKA_URI": "https://s3-eu-west-1.amazonaws.com/downloads.mesosphere.com/kafka/0_8_2_2/kafka_2.10-0.8.2.2.tgz",
+    "KAFKA_URI": "http://10.203.241.151:7878/kafka_frameworks/kafka_2.11-0.10.1.1.tgz",
     "KAFKA_VER_NAME": "kafka_2.10-0.8.2.2",
     "LD_LIBRARY_PATH": "/opt/mesosphere/lib",
-    "OVERRIDER_URI": "https://s3.amazonaws.com/downloads.mesosphere.io/kafka/assets/1.0.7-0.9.0.1/overrider.zip",
+    "OVERRIDER_URI": "http://10.203.241.151:7878/kafka_frameworks/overrider.zip",
     "PHASE_STRATEGY": "INSTALL",
     "PLACEMENT_STRATEGY": "ANY",
     "USER": ""
@@ -122,10 +122,10 @@
     "DCOS_PACKAGE_IS_FRAMEWORK": "true",
     "DCOS_PACKAGE_METADATA": "eyJuYW1lIjoia2Fma2EiLCJwb3N0SW5zdGFsbE5vdGVzIjoiREMvT1MgS2Fma2EgU2VydmljZSBpcyBiZWluZyBpbnN0YWxsZWQuXG5cblx0RG9jdW1lbnRhdGlvbjogaHR0cHM6Ly9kb2NzLm1lc29zcGhlcmUuY29tL2thZmthLTEtNy9cblx0SXNzdWVzOiBodHRwczovL2RvY3MubWVzb3NwaGVyZS5jb20vc3VwcG9ydC8iLCJkZXNjcmlwdGlvbiI6IkFwYWNoZSBLYWZrYSBydW5uaW5nIG9uIERDL09TIiwicGFja2FnaW5nVmVyc2lvbiI6IjIuMCIsInRhZ3MiOlsibWVzc2FnZSIsImJyb2tlciIsInB1YnN1YiJdLCJwb3N0VW5pbnN0YWxsTm90ZXMiOiJEQy9PUyBLYWZrYSBTZXJ2aWNlIGhhcyBiZWVuIHVuaW5zdGFsbGVkLlxuUGxlYXNlIGZvbGxvdyB0aGUgaW5zdHJ1Y3Rpb25zIGF0IGh0dHBzOi8vZG9jcy5tZXNvc3BoZXJlLmNvbS9rYWZrYS0xLTcvI3VuaW5zdGFsbCB0byByZW1vdmUgYW55IHBlcnNpc3RlbnQgc3RhdGUgaWYgcmVxdWlyZWQuIiwibWFpbnRhaW5lciI6InN1cHBvcnRAbWVzb3NwaGVyZS5pbyIsInNlbGVjdGVkIjp0cnVlLCJmcmFtZXdvcmsiOnRydWUsInZlcnNpb24iOiIxLjAuNy0wLjguMi4yIiwiaW1hZ2VzIjp7Imljb24tc21hbGwiOiJodHRwczovL2QxdnVicjBldnNwbGEuY2xvdWRmcm9udC5uZXQvaW1nL2ljb24tc21hbGwucG5nIiwiaWNvbi1tZWRpdW0iOiJodHRwczovL2QxdnVicjBldnNwbGEuY2xvdWRmcm9udC5uZXQvaW1nL2ljb24tbWVkaXVtLnBuZyIsImljb24tbGFyZ2UiOiJodHRwczovL2QxdnVicjBldnNwbGEuY2xvdWRmcm9udC5uZXQvaW1nL2ljb24tbGFyZ2UucG5nIiwic2NyZWVuc2hvdHMiOm51bGx9fQ==",
     "DCOS_PACKAGE_NAME": "kafka",
-    "DCOS_PACKAGE_REGISTRY_VERSION": "2.0",
+    "DCOS_PACKAGE_REGISTRY_VERSION": "3.0",
     "DCOS_PACKAGE_RELEASE": "14",
     "DCOS_PACKAGE_SOURCE": "https://github.com/mesosphere/universe-1.7/archive/kafka-demo.zip",
-    "DCOS_PACKAGE_VERSION": "1.0.7-0.8.2.2",
+    "DCOS_PACKAGE_VERSION": "2.11-0.10.1.1",
     "MARATHON_SINGLE_INSTANCE_APP": "true"
   },
   "mem": 1230,
@@ -156,8 +156,8 @@
     "minimumHealthCapacity": 0
   },
   "uris": [
-    "https://s3.amazonaws.com/downloads.mesosphere.io/kafka/assets/jre-8u72-linux-x64.tar.gz",
-    "https://s3.amazonaws.com/downloads.mesosphere.io/kafka/assets/1.0.7-0.9.0.1/scheduler.zip",
-    "https://s3-eu-west-1.amazonaws.com/downloads.mesosphere.com/kafka/0_8_2_2/kafka_2.10-0.8.2.2.tgz"
+    "http://10.203.241.151:7878/kafka_frameworks/jre-8u112-linux-x64.tar.gz",
+    "http://10.203.241.151:7878/kafka_frameworks/scheduler.zip",
+    "http://10.203.241.151:7878/kafka_frameworks/kafka_2.11-0.10.1.1.tgz"
   ]
 }
