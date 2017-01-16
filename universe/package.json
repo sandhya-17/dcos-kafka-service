@@ -4,7 +4,7 @@
   "version": "{{package-version}}",
   "maintainer": "BellLabs",
   "description": "Apache Kafka running on DC/OS",
-  "selected": false,
+  "selected": true,
   "framework": true,
   "tags": ["message", "broker", "pubsub"],
   "postInstallNotes": "DC/OS Kafka Service is being installed.\n\n\tDocumentation: https://docs.mesosphere.com/current/usage/service-guides/kafka/\n\tIssues: https://dcosjira.atlassian.net/projects/KAFKA/issues",
