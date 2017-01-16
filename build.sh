@@ -7,8 +7,7 @@ REPO_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $REPO_ROOT_DIR
 
 # Grab dcos-commons build/release tools:
-rm -rf dcos-commons-tools/ && curl -O http://10.203.241.151:7878/dcos-commons-tools.tgz | tar xz
-
+rm -rf dcos-commons-tools/ && curl -O http://10.203.241.151:7878/dcos-commons-tools.tgz | tar -xvzf dcos-commons-tools.tgz
 # GitHub notifier config
 _notify_github() {
     $REPO_ROOT_DIR/dcos-commons-tools/github_update.py $1 build $2
