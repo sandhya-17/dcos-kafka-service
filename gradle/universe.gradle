@@ -1,6 +1,6 @@
 ext {
-  aws = "http://downloads.mesosphere.io/"
-  basePath = "kafka/assets/"
+  aws = "http://10.203.241.151:7878"
+  basePath = "kafka_frameworks"
   packageVer = "stub-universe" // is replaced
   cliBase = "dcos-kafka-"
 }
