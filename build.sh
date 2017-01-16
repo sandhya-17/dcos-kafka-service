@@ -43,7 +43,7 @@ cd $REPO_ROOT_DIR
 
 _notify_github success "Build succeeded"
 
-./dcos-commons-tools/publish_aws.py \
+./dcos-commons-tools/publish_http.py \
   kafka \
   universe/ \
   kafka-scheduler/build/distributions/*.zip \
